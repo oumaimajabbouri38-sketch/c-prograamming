@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+typedef struct {
+    char nom[30];
+    int age;
+    float moyenne;
+} Etudiant;
+
+int main() {
+    Etudiant e;
+
+    
+    printf("Entrez le nom : ");
+    scanf("%s", e.nom);
+
+    printf("Entrez l'age : ");
+    scanf("%d", &e.age);
+
+    printf("Entrez la moyenne : ");
+    scanf("%f", &e.moyenne);
+
+    printf("\n--- Informations Etudiant ---\n");
+    printf("Nom : %s\n", e.nom);
+    printf("Age : %d\n", e.age);
+    printf("Moyenne : %.2f\n", e.moyenne);
+
+    if (e.moyenne >= 10)
+        printf("Résultat : Admis\n");
+    else
+        printf("Résultat : Non admis \n");
+
+    return 0;
+}
