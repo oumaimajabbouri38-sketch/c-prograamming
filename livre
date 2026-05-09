@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+struct livre {
+    char titre[30];
+    float prix;
+};
+
+int main() {
+    struct livre L;
+
+    L.prix = 120.5;
+
+    printf("Prix: %.2f\n", L.prix);
+
+    return 0;
+}
