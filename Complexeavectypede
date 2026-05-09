@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+typedef struct {
+    float reel;
+    float imag;
+} complexe;
+
+int main() {
+    complexe z;
+
+    z.reel = 3;
+    z.imag = 4;
+
+    printf("Reel = %.1f\n", z.reel);
+    printf("Imag = %.1f\n", z.imag);
+
+    return 0;
+}
